@@ -5,36 +5,243 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD"
+      crossorigin="anonymous"
+    />
 </head>
 <body> 
-    <nav class="navbar navbar-expand-lg navbar-light" style="background-color: #3e3c3c">
-      <div class="container-fluid">
-        <a class="navbar-brand text-white ps-5" href="#">John Doe</a>
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
-          <ul class="navbar-nav pe-5">
-            <li class="nav-item">
-              <a class="nav-link active text-white" aria-current="page" href="#">Portfolio</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link text-white" href="#">About</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link text-white" href="#">Contact</a>
-            </li>
-          </ul>
+  <nav id="navbar-example2" class="navbar sticky-top navbar-light bg-secondary px-3">
+    <div class="container-fluid w-75">
+      <a class="navbar-brand text-white" href="#home">John Doe</a>
+      <ul class="nav nav-pills">
+        <li class="nav-item">
+          <a class="nav-link text-white" href="#portfolio">Portfolio</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link text-white" href="#about">About</a>
+        </li>
+        <li class="nav-item ">
+          <a class="nav-link text-white" href="#contact">Contact</a>
+        </li>
+      </ul>
+    </div>
+  </nav>
+  <section id="home"
+      class="py-5 container-fluid bg-dark text-white d-flex flex-row-reverse align-items-center justify-content-end">
+      <div class="py-5">
+        <div class="col-lg-6 col-md-8">
+          <h1 class="fs-1 fw-bolder lead" style="color: #f55800">
+            Hey There. <br />
+            I’m John Doe.
+          </h1>
+          <h2 class="fs-2">I’m a Software Developer</h2>
+          <p class="fs-5 lead">
+            I can help you build a product , feature or website. Look through
+            some of my work and experience! If you like what you see and have a
+            project you need coded, don’t hesitate to contact me.
+          </p>
         </div>
       </div>
-    </nav>
-    <div class="container-fluid d-flex justify-content-end" id="background-container" style="height: 85vh; background-color: #1c1a19; padding-right: 0rem; padding-left: 0; ">
-      <div class="container bg-light" id="social-icons" style="width: 80px; height: 85vh; margin-left: 0; padding-left: 0;"></div>
-      <div class="container bg-warning" id="heading" style="width: 80px; height: 80px;"></div>
-      <img src="./assets/Illustration-header.png" alt="Illustration" class="img-fluid" style = "width: 40vw; height: 86vh;">
-    </div>
-
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+    </section>
+  <div data-bs-spy="scroll" data-bs-target="#navbar-example2" data-bs-offset="0" class="scrollspy-example" tabindex="0">
+    <section id="portfolio">
+      <div class="d-flex align-items-center justify-content-around mt-4">
+        <h4 class="fs-3">My recent work</h4>
+        <div class="border border-dark border-1 w-75" style="height: 0"></div>
+      </div>
+      <div class="d-flex flex-row justify-content-around my-4 mx-5">
+        <img src="./assets/multipost.png" alt="Multi-post Stories" width="50%" class="mx-4"/>
+        <div>
+          <h2>Multi-Post Stories</h2>
+          <p>
+            A daily selection of privately personalized reads; no accounts or
+            sign-ups required. This has been the industry's standard dummy text
+            ever since the 1500s, when an unknown printer took a standard dummy
+            text.
+          </p>
+          <div class="d-flex py-2">
+            <span class="badge bg-light text-dark p-2 btn border border-dark me-2">css</span>
+            <span class="badge bg-light text-dark p-2 btn border border-dark me-2">html</span>
+            <span class="badge bg-light text-dark p-2 btn border border-dark me-2">bootstrap</span>
+            <span class="badge bg-light text-dark p-2 btn border border-dark me-2">Ruby</span>
+          </div>
+          <button class="btn-large btn btn-primary mt-3 border-0" style="background-color: #f55800">See Project</button>
+        </div>
+      </div>
+      <div class="container my-4">
+        <div class="row py-3">
+          <div
+            class="col card border border-0 d-flex flex-column-reverse mx-3 px-0"
+            style="
+              height: 30rem;
+              background-image: url('./assets/card-image-1.png');
+              background-repeat: no-repeat;
+              background-size: cover;
+            "
+            >
+            <button
+              type="button"
+              class="btn-large btn btn-primary mt-3 mx-0 border-0"
+              style="background-color: #f55800"
+            >
+              See Project
+            </button>
+          </div>
+          <div
+            class="col card border border-0 d-flex flex-column justify-content-end align-items-center py-2 mx-3 px-0"
+            style="
+              height: 30rem;
+              background-image: url('./assets/card-image-2.png');
+              background-repeat: no-repeat;
+              background-size: cover;
+            "
+          >
+            <p class="text-white fs-2 fw-bold w-75">
+              Data Dashboard Healthcare
+            </p>
+            <p class="text-white fs-5 w-75">
+              A daily selection of privately personalized reads; no accounts or
+              sign-ups required. has been the industry's standard
+            </p>
+            <div class="d-flex py-2 w-75">
+              <span class="badge bg-secondary p-2 btn border border-0 me-2"
+                >html</span
+              >
+              <span class="badge bg-secondary p-2 btn border border-0 me-2"
+                >bootstrap</span
+              >
+              <span class="badge bg-secondary p-2 btn border border-0 me-2"
+                >Ruby</span
+              >
+            </div>
+          </div>
+          <div
+            class="col card border border-0 d-flex flex-column justify-content-end align-items-center py-2 mx-3 px-0"
+            style="
+              height: 30rem;
+              background-image: url('./assets/card-image-3.png');
+              background-repeat: no-repeat;
+              background-size: cover;
+            "
+          >
+            <p class="text-white fs-2 fw-bold w-75">Website Protfolio</p>
+            <p class="text-white fs-5 w-75">
+              A daily selection of privately personalized reads; no accounts or
+              sign-ups required. has been the industry's standard
+            </p>
+            <div class="d-flex py-2 w-75">
+              <span class="badge bg-secondary p-2 btn border border-0 me-2"
+                >html</span
+              >
+              <span class="badge bg-secondary p-2 btn border border-0 me-2"
+                >bootstrap</span
+              >
+              <span class="badge bg-secondary p-2 btn border border-0 me-2"
+                >Ruby</span
+              >
+            </div>
+          </div>
+        </div>
+        <div class="row py-3">
+          <div
+            class="col card border border-0 d-flex flex-column justify-content-end align-items-center py-2 mx-3 px-0"
+            style="
+              height: 30rem;
+              background-image: url('./assets/card-image-4.png');
+              background-repeat: no-repeat;
+              background-size: cover;
+            "
+          >
+            <p class="text-white fs-2 fw-bold w-75">
+              Profesional Art Printing Data More
+            </p>
+            <p class="text-white fs-5 w-75">
+              A daily selection of privately personalized reads; no accounts or
+              sign-ups required. has been the industry's standard
+            </p>
+            <div class="d-flex py-2 w-75">
+              <span class="badge bg-secondary p-2 btn border border-0 me-2"
+                >html</span
+              >
+              <span class="badge bg-secondary p-2 btn border border-0 me-2"
+                >bootstrap</span
+              >
+              <span class="badge bg-secondary p-2 btn border border-0 me-2"
+                >Ruby</span
+              >
+            </div>
+          </div>
+          <div
+            class="col card border border-0 d-flex flex-column justify-content-end align-items-center py-2 mx-3 px-0"
+            style="
+              height: 30rem;
+              background-image: url('./assets/card-image-2.png');
+              background-repeat: no-repeat;
+              background-size: cover;
+            "
+          >
+            <p class="text-white fs-2 fw-bold w-75">
+              Data Dashboard Healthcare
+            </p>
+            <p class="text-white fs-5 w-75">
+              A daily selection of privately personalized reads; no accounts or
+              sign-ups required. has been the industry's standard
+            </p>
+            <div class="d-flex py-2 w-75">
+              <span class="badge bg-secondary p-2 btn border border-0 me-2"
+                >html</span
+              >
+              <span class="badge bg-secondary p-2 btn border border-0 me-2"
+                >bootstrap</span
+              >
+              <span class="badge bg-secondary p-2 btn border border-0 me-2"
+                >Ruby</span
+              >
+            </div>
+          </div>
+          <div
+            class="col card border border-0 d-flex flex-column justify-content-end align-items-center py-2 mx-3 px-0"
+            style="
+              height: 30rem;
+              background-image: url('./assets/card-image-3.png');
+              background-repeat: no-repeat;
+              background-size: cover;
+            "
+          >
+            <p class="text-white fs-2 fw-bold w-75">Website Protfolio</p>
+            <p class="text-white fs-5 w-75">
+              A daily selection of privately personalized reads; no accounts or
+              sign-ups required. has been the industry's standard
+            </p>
+            <div class="d-flex py-2 w-75">
+              <span class="badge bg-secondary p-2 btn border border-0 me-2"
+                >html</span
+              >
+              <span class="badge bg-secondary p-2 btn border border-0 me-2"
+                >bootstrap</span
+              >
+              <span class="badge bg-secondary p-2 btn border border-0 me-2"
+                >Ruby</span
+              >
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <h4 id="about">About</h4>
+    <p>...</p>
+    <div style="height: 1000px; width:100%;"></div>
+    <h4 id="contact">Contact</h4>
+    <p>...</p>
+    <div style="height: 1000px; width:100%;"></div>
+  </div>
+    <script 
+    src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
+    crossorigin="anonymous">
+    </script>
 </body>
 </html>
